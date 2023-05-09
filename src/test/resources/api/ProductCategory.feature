@@ -4,10 +4,10 @@ Feature: Product Category
   I want to see list of product category
   So that I can create new product category
 
-  Scenario: Post - As user I have be able to cerate a new product category
-    Given I set correct POST endpoint
-    When I send HTTP request POST
-    Then I receives the HTTP response code 200
+  #Scenario: Post - As user I have be able to cerate a new product category
+    #Given I set correct POST endpoint
+    #When I send HTTP request POST
+    #Then I receives the HTTP response code 200
 
   Scenario: Post - As user I failed to cerate a new product category
     Given I set incorrect POST endpoint

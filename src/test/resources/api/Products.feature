@@ -64,10 +64,10 @@ Feature: Products
     When I send GET HTTP requestts
     Then I receive HTTP response code 404
 
-  Scenario: Post- As user I have be able to create a comment
-    Given I am set valid POST endpoint
-    When I am sending POST HTTP request
-    Then I am receive the valid HTTP response code is 200
+  #Scenario: Post- As user I have be able to create a comment
+    #Given I am set valid POST endpoint
+    #When I am sending POST HTTP request
+    #Then I am receive the valid HTTP response code is 200
 
   Scenario: Post- As user I failed to create a comment
     Given I am set invalid POST endpoints

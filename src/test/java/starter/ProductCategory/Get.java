@@ -28,7 +28,7 @@ public class Get {
     @Step("I receives HTTP response code 404")
     public void iReceivesHTTPResponseCode404() {restAssuredThat(response -> response.statusCode(404));}
     @Step("I set corrects GET endpoiint")
-    public String setCorrectsGetEndpoint(){ return url + "categories/11313";}
+    public String setCorrectsGetEndpoint(){ return url + "categories/12531";}
     @Step("I sending HTTP requests Get")
     public void sendingHttpRequestGet(){
         SerenityRest.given()

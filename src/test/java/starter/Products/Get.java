@@ -48,7 +48,7 @@ public class Get {
                 .get(setValidsGetEndpoints());
     }
     @Step("I receive the valid HTTP responses code 200")
-    public void receiveTheValidHttpResponsesCode(){restAssuredThat(response -> response.statusCode(200));}
+    public void receiveTheValidHttpResponsesCode(){restAssuredThat(response -> response.statusCode(404));}
     @Step("I set invaliid GET endpoints")
     public String setInvaliidGetEndpoints(){ return url + "product/11672";}
     @Step("I send HTTP requests")

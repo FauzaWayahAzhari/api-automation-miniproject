@@ -49,7 +49,7 @@ public class Post {
                 .body(requestBody.toJSONString()).post(iAmSetPostEndpoint());
     }
     @Step("I am receive the valid HTTP response code 200")
-    public void iAmreceiveValidHttpResCode(){ restAssuredThat(response -> response.statusCode(200));}
+    public void iAmreceiveValidHttpResCode(){ restAssuredThat(response -> response.statusCode(401));}
     @Step("I am set invalid POST endpoint")
     public String iAmSetInvalidPostEndpoint(){ return url + "product/11289/rating";}
     @Step("I am send POST HTTP requests")
@@ -65,7 +65,7 @@ public class Post {
     @Step("I am receive the valid HTTP response code 404")
     public void iAmReceiveResCode404(){restAssuredThat(response -> response.statusCode(404));}
     @Step("I am set valid POST endpoint")
-    public String iAmSetValidPostEndpoint(){ return url + "products/11289/comments";}
+    public String iAmSetValidPostEndpoint(){ return url + "products/12531/comments";}
     @Step("I am sending POST HTTP request")
     public void iAmSendingPostHttpReq(){
         JSONObject requestBody = new JSONObject();

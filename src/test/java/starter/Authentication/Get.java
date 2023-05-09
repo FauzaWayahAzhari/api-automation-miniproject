@@ -11,7 +11,7 @@ public class Get {
     public String iAmSetValidGetEndpoint(){ return url + "info";}
     @Step("I am send GET HTTP Request")
     public void iAmSendGETHttpRequest() {
-        String AuthToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IkZhdXphIFdheWFoIEF6aGFyaSIsIkVtYWlsIjoiZmF1emF3YXlhaGF6aGFyaUBnbWFpbC5jb20ifQ.QEVEMPvKuIYyGgoBdxFLxilmNqo-R271rP1U0EdQjnw";
+        String AuthToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6IlRlc2EiLCJFbWFpbCI6InRlc2FAbWFpbC5jb20ifQ.Kvr3NCVeBOoX-LTmQEWkycdKV5pUNShftxfnEctx06w";
 
         SerenityRest.given().auth().oauth2(AuthToken)
                 .when()

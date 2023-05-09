@@ -13,9 +13,9 @@ public class Post {
     @Step("I send POST HTTP Req")
     public void sendPostHttpReq(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "testapi12@mail.com");
-        requestBody.put("password", "testapi12");
-        requestBody.put("fullname","Tes Api");
+        requestBody.put("email", "apiiiiii@mail.com");
+        requestBody.put("password", "apiiiiii");
+        requestBody.put("fullname","Apiiiiiiii");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setValidPostEndpoint());
     }
@@ -39,8 +39,8 @@ public class Post {
     @Step("I send POST HTTP Reqs")
     public void sendPostHttpReqs(){
         JSONObject requestBody = new JSONObject();
-        requestBody.put("email", "fauzawayahazhari@gmail.com");
-        requestBody.put("password", "password123");
+        requestBody.put("email", "tesa@mail.com");
+        requestBody.put("password", "tesa");
 
         SerenityRest.given().header("Content-Type", "application/json").body(requestBody.toJSONString()).post(setValidPostEndpoints());
     }
